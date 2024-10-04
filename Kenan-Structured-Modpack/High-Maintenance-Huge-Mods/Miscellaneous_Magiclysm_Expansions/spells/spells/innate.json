@@ -19,10 +19,16 @@
     "base_energy_cost": 50,
     "min_range": 3,
     "max_range": 3,
-    "flags": [ "NO_LEGS" ],
+    "flags": [ "CONJURATION_SPELL", "NO_LEGS" ],
     "min_duration": 30000,
     "max_duration": 150000,
-    "duration_increment": 4000
+    "duration_increment": 4000,
+    "extra_effects": [
+      {
+        "id": "eoc_summon_setup",
+        "hit_self": true
+      }
+    ]
   },
   {
     "id": "cone_force",
@@ -32,6 +38,7 @@
     "effect": "attack",
     "shape": "cone",
     "valid_targets": [ "ally", "hostile", "ground" ],
+    "flags": [ "CONJURATION_SPELL" ],
     "max_level": 20,
     "min_damage": 30,
     "max_damage": 90,
@@ -47,6 +54,12 @@
     "base_energy_cost": 400,
     "energy_source": "MANA",
     "difficulty": 0,
-    "damage_type": "pure"
+    "damage_type": "pure",
+    "extra_effects": [
+      {
+        "id": "eoc_summon_setup",
+        "hit_self": true
+      }
+    ]
   }
 ]

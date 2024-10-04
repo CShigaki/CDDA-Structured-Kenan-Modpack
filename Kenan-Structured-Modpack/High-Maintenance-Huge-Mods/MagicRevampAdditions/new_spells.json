@@ -24,7 +24,13 @@
     "name": { "str": "Sonic Demolition Pulse" },
     "description": "This adds the actual effect of yeeting terrain in range.",
     "valid_targets": [ "ground" ],
-    "extra_effects": [ { "id": "sonic_extra", "hit_self": false, "max_level": 10 } ],
+    "extra_effects": [
+      {
+        "id": "sonic_extra",
+        "hit_self": false,
+        "max_level": 10
+      }
+    ],
     "message": "",
     "effect": "bash",
     "shape": "blast",
@@ -86,11 +92,15 @@
     "shape": "blast",
     "extra_effects": [
       { "id": "sonic_spike", "hit_self": false, "max_level": 20 },
-      { "id": "sonic_demolition_pulse", "hit_self": false, "max_level": 20 }
+      { "id": "sonic_demolition_pulse", "hit_self": false, "max_level": 20 },
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
     ],
     "valid_targets": [ "ground" ],
     "spell_class": "NONE",
-    "flags": [ "CONCENTRATE", "NO_LEGS", "IGNORE_WALLS", "SILENT", "NO_PROJECTILE" ],
+    "flags": [ "CONCENTRATE", "NO_LEGS", "IGNORE_WALLS", "SILENT", "NO_PROJECTILE", "EVOCATION_SPELL" ],
     "effect_str": "stunned",
     "min_damage": 95,
     "max_damage": 275,
@@ -122,11 +132,15 @@
     "shape": "blast",
     "extra_effects": [
       { "id": "sonic_spike", "hit_self": false, "max_level": 20 },
-      { "id": "sonic_blast_pulse", "hit_self": false, "max_level": 20 }
+      { "id": "sonic_blast_pulse", "hit_self": false, "max_level": 20 },
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
     ],
     "valid_targets": [ "ground" ],
     "spell_class": "NONE",
-    "flags": [ "CONCENTRATE", "NO_LEGS", "IGNORE_WALLS", "SILENT", "NO_PROJECTILE" ],
+    "flags": [ "CONCENTRATE", "NO_LEGS", "IGNORE_WALLS", "SILENT", "NO_PROJECTILE", "EVOCATION_SPELL" ],
     "effect_str": "stunned",
     "min_damage": 65,
     "max_damage": 160,

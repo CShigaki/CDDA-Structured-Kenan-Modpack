@@ -21,7 +21,13 @@
     "max_range": 5,
     "min_aoe": 2,
     "max_aoe": 4,
-    "flags": [ "SOMATIC", "VERBAL", "CONCENTRATE" ],
+    "flags": [ "SOMATIC", "VERBAL", "CONCENTRATE", "CONJURATION_SPELL" ],
+    "extra_effects": [
+      {
+        "id": "eoc_summon_setup",
+        "hit_self": true
+      }
+    ],
     "min_duration": 30000,
     "max_duration": 150000,
     "duration_increment": 4000
@@ -44,7 +50,13 @@
     "spell_class": "ATRO",
     "difficulty": 10,
     "max_level": 25,
-    "flags": [ "VERBAL", "SOMATIC", "LOUD", "NO_PROJECTILE" ],
+    "flags": [ "VERBAL", "SOMATIC", "LOUD", "NO_PROJECTILE", "EVOCATION_SPELL" ],
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ],
     "energy_source": "MANA"
   },
   {
@@ -66,7 +78,13 @@
     "base_energy_cost": 5000,
     "energy_increment": 1,
     "final_energy_cost": 10000,
-    "flags": [ "SOMATIC", "VERBAL", "SILENT", "NO_LEGS" ],
+    "flags": [ "SOMATIC", "VERBAL", "SILENT", "NO_LEGS", "RESTORATION_SPELL" ],
+    "extra_effects": [
+      {
+        "id": "eoc_restoration_setup",
+        "hit_self": true
+      }
+    ],
     "difficulty": 5
   },
   {
@@ -79,7 +97,7 @@
     "shape": "blast",
     "spell_class": "ATRO",
     "energy_source": "MANA",
-    "flags": [ "NO_LEGS", "CONCENTRATE", "SOMATIC", "NO_PROJECTILE" ],
+    "flags": [ "NO_LEGS", "CONCENTRATE", "SOMATIC", "NO_PROJECTILE", "EVOCATION", "EVOCATION_SPELL" ],
     "min_damage": 50,
     "max_damage": 275,
     "damage_increment": 5,
@@ -90,6 +108,12 @@
     "difficulty": 6,
     "base_casting_time": 100,
     "base_energy_cost": 100,
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ],
     "damage_type": "biological"
   },
   {
@@ -102,7 +126,7 @@
     "shape": "blast",
     "spell_class": "ATRO",
     "energy_source": "MANA",
-    "flags": [ "NO_LEGS", "SOMATIC", "NO_PROJECTILE" ],
+    "flags": [ "NO_LEGS", "SOMATIC", "NO_PROJECTILE", "EVOCATION_SPELL" ],
     "min_damage": 10,
     "max_damage": 30,
     "damage_increment": 5,
@@ -113,6 +137,12 @@
     "difficulty": 1,
     "base_casting_time": 100,
     "base_energy_cost": 5,
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ],
     "damage_type": "biological"
   },
   {
@@ -123,7 +153,7 @@
     "effect": "attack",
     "shape": "blast",
     "valid_targets": [ "hostile", "ground" ],
-    "flags": [ "SOMATIC", "VERBAL", "NO_LEGS" ],
+    "flags": [ "SOMATIC", "VERBAL", "NO_LEGS", "EVOCATION_SPELL" ],
     "max_level": 20,
     "min_damage": 24,
     "max_damage": 68,
@@ -139,6 +169,12 @@
     "base_energy_cost": 350,
     "energy_source": "MANA",
     "difficulty": 4,
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ],
     "damage_type": "biological"
   }
 ]

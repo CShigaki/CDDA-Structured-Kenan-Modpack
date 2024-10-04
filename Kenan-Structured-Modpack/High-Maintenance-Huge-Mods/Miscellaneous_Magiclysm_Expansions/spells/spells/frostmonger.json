@@ -5,7 +5,7 @@
     "name": { "str": "Ice Spear" },
     "description": "Causes elongated, jagged icicles to form in the air above the target, falling and damaging it.",
     "valid_targets": [ "hostile" ],
-    "flags": [ "CONCENTRATE", "SOMATIC", "LOUD", "VERBAL", "NO_PROJECTILE" ],
+    "flags": [ "EVOCATION_SPELL", "CONCENTRATE", "SOMATIC", "LOUD", "VERBAL", "NO_PROJECTILE" ],
     "effect": "attack",
     "shape": "blast",
     "damage_type": "cold",
@@ -20,7 +20,13 @@
     "spell_class": "ICEWIZ",
     "base_casting_time": 200,
     "energy_source": "MANA",
-    "base_energy_cost": 150
+    "base_energy_cost": 150,
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ]
   },
   {
     "id": "ipunch",
@@ -51,7 +57,7 @@
     "effect": "attack",
     "shape": "cone",
     "valid_targets": [ "ally", "hostile", "ground" ],
-    "flags": [ "SOMATIC", "VERBAL" ],
+    "flags": [ "EVOCATION_SPELL", "SOMATIC", "VERBAL" ],
     "max_level": 20,
     "min_damage": 30,
     "max_damage": 90,
@@ -71,7 +77,13 @@
     "min_field_intensity": 1,
     "max_field_intensity": 5,
     "field_intensity_increment": 0.5,
-    "damage_type": "cold"
+    "damage_type": "cold",
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ]
   },
   {
     "id": "hoary_ball",
@@ -83,7 +95,7 @@
     "effect_str": "cold",
     "affected_body_parts": [ "torso" ],
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
-    "flags": [ "SOMATIC", "VERBAL", "NO_LEGS" ],
+    "flags": [ "EVOCATION_SPELL", "SOMATIC", "VERBAL", "NO_LEGS" ],
     "max_level": 20,
     "min_damage": 30,
     "max_damage": 75,
@@ -99,6 +111,12 @@
     "base_energy_cost": 400,
     "energy_source": "MANA",
     "difficulty": 5,
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ],
     "damage_type": "cold"
   },
   {
@@ -107,7 +125,7 @@
     "name": { "str": "Freeze" },
     "description": "A gust of freezing wind comes forth, freezing your opponents in place!",
     "valid_targets": [ "hostile", "ground" ],
-    "flags": [ "SOMATIC", "VERBAL", "NO_LEGS", "NO_PROJECTILE" ],
+    "flags": [ "EVOCATION_SPELL", "SOMATIC", "VERBAL", "NO_LEGS", "NO_PROJECTILE" ],
     "effect": "attack",
     "shape": "blast",
     "effect_str": "froze",
@@ -128,6 +146,12 @@
     "dot_increment": 0.1,
     "min_duration": 2000,
     "max_duration": 20000,
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ],
     "duration_increment": 500
   },
   {
@@ -136,7 +160,7 @@
     "name": { "str": "Slide on Ice" },
     "description": "Encases your feet in a magical coating of ice, allowing you to glide along smooth surfaces at extreme speeds.",
     "valid_targets": [ "none" ],
-    "flags": [ "VERBAL", "NO_HANDS", "NO_LEGS", "CONCENTRATE" ],
+    "flags": [ "CONJURATION_SPELL", "VERBAL", "NO_HANDS", "NO_LEGS", "CONCENTRATE" ],
     "min_damage": 1,
     "max_damage": 1,
     "effect": "spawn_item",
@@ -150,6 +174,12 @@
     "base_energy_cost": 100,
     "min_duration": 10000,
     "max_duration": 100000,
-    "duration_increment": 2000
+    "duration_increment": 2000,
+    "extra_effects": [
+      {
+        "id": "eoc_summon_setup",
+        "hit_self": true
+      }
+    ]
   }
 ]

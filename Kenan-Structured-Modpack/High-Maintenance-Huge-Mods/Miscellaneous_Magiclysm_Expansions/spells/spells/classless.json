@@ -19,6 +19,12 @@
     "min_duration": 100000,
     "max_duration": 1000000,
     "duration_increment": 2000,
-    "flags": [ "NO_PROJECTILE" ]
+    "extra_effects": [
+      {
+        "id": "eoc_transformation_setup",
+        "hit_self": true
+      }
+    ],
+    "flags": [ "NO_PROJECTILE", "TRANSFORMATION_SPELL" ]
   }
 ]

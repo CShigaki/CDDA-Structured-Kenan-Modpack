@@ -25,7 +25,13 @@
     "field_intensity_increment": 0.1,
     "base_casting_time": 300,
     "energy_source": "MANA",
-    "flags": [ "VERBAL", "NO_HANDS", "NO_LEGS" ]
+    "flags": [ "VERBAL", "NO_HANDS", "NO_LEGS", "EVOCATION_SPELL" ],
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ]
   },
   {
     "id": "fireboulder",
@@ -35,7 +41,7 @@
     "effect": "attack",
     "shape": "blast",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
-    "flags": [ "SOMATIC", "VERBAL", "NO_LEGS" ],
+    "flags": [ "SOMATIC", "VERBAL", "NO_LEGS", "EVOCATION_SPELL" ],
     "max_level": 20,
     "min_damage": 40,
     "max_damage": 145,
@@ -51,7 +57,13 @@
     "base_energy_cost": 350,
     "energy_source": "MANA",
     "difficulty": 6,
-    "damage_type": "heat"
+    "damage_type": "heat",
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ]
   },
   {
     "id": "flamethrower",
@@ -61,7 +73,7 @@
     "effect": "attack",
     "shape": "cone",
     "valid_targets": [ "ally", "hostile", "ground" ],
-    "flags": [ "SOMATIC", "VERBAL" ],
+    "flags": [ "SOMATIC", "VERBAL", "EVOCATION_SPELL" ],
     "max_level": 20,
     "min_damage": 18,
     "max_damage": 70,
@@ -77,7 +89,13 @@
     "base_energy_cost": 200,
     "energy_source": "MANA",
     "difficulty": 2,
-    "damage_type": "heat"
+    "damage_type": "heat",
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ]
   },
   {
     "id": "fireshot",
@@ -85,7 +103,7 @@
     "name": { "str": "Searing Shot" },
     "description": "Creates intense flame at a location, harming the target.",
     "valid_targets": [ "hostile" ],
-    "flags": [ "CONCENTRATE", "SOMATIC", "NO_PROJECTILE" ],
+    "flags": [ "CONCENTRATE", "SOMATIC", "NO_PROJECTILE", "EVOCATION_SPELL" ],
     "effect": "attack",
     "shape": "blast",
     "damage_type": "heat",
@@ -100,7 +118,13 @@
     "difficulty": 4,
     "max_level": 18,
     "base_casting_time": 300,
-    "energy_source": "MANA"
+    "energy_source": "MANA",
+    "extra_effects": [
+      {
+        "id": "eoc_evocation_setup",
+        "hit_self": true
+      }
+    ]
   },
   {
     "id": "fpunch",
