@@ -260,6 +260,7 @@
       "hostile"
     ],
     "flags": [
+      "NO_PROJECTILE",
       "EVOCATION_SPELL",
       "VERBAL",
       "SOMATIC",

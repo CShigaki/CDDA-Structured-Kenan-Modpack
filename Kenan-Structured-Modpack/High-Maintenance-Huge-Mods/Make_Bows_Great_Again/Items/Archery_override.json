@@ -223,6 +223,13 @@
     "ranged_damage": { "damage_type": "stab", "amount": 15 }
   },
   {
+    "id": "druid_recurve",
+    "copy-from": "druid_recurve",
+    "type": "GUN",
+    "name": { "str": "Woodbow" },
+    "ranged_damage": { "damage_type": "stab", "amount": 15 }
+  },
+  {
     "id": "reflexbow",
     "copy-from": "reflexbow",
     "type": "GUN",
