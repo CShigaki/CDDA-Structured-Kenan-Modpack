@@ -157,22 +157,14 @@
     "name": { "str": "compound bow" },
     "min_strength": 9,
     "ranged_damage": { "damage_type": "stab", "amount": 21 },
-    "use_action": [
-      {
-        "menu_text": "Tighten Limbs",
-        "type": "transform",
-        "target": "compbow_high",
-        "qualities_needed": { "SCREW_FINE": 1 },
-        "msg": "You tighten the limbs, increasing the strength of the bow."
-      },
-      {
-        "menu_text": "Loosen Limbs",
-        "type": "transform",
-        "target": "compbow_low",
-        "qualities_needed": { "SCREW_FINE": 1 },
-        "msg": "You loosen the limbs, decreasing the strength of the bow."
-      }
-    ]
+    "use_action": {
+      "menu_text": "Tighten Limbs",
+      "type": "transform",
+      "target": "compbow_high",
+      "qualities_needed": { "SCREW_FINE": 1 },
+      "msg": "You tighten the limbs, increasing the strength of the bow.",
+      "ammo_scale": 0
+    }
   },
   {
     "id": "compbow_high",
@@ -183,6 +175,7 @@
     "min_strength": 14,
     "ranged_damage": { "damage_type": "stab", "amount": 27 },
     "use_action": {
+      "ammo_scale": 0,
       "menu_text": "Loosen Limbs",
       "type": "transform",
       "target": "compbow_low",
@@ -199,6 +192,7 @@
     "min_strength": 7,
     "ranged_damage": { "damage_type": "stab", "amount": 18 },
     "use_action": {
+      "ammo_scale": 0,
       "menu_text": "Tighten Limbs",
       "type": "transform",
       "target": "compbow",
